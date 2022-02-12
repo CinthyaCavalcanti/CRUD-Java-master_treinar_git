@@ -16,7 +16,7 @@
 	</c:if>
 	
 	<meta charset="UTF-8">
-	<title>Listar Usuarios</title>
+	<title>Listar Usuarios ativos</title>
 </head>
 <body>
 <div class="container">
