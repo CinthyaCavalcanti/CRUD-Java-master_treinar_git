@@ -7,15 +7,15 @@ public class Usuario {
 	private String nome;
 	private String email;
 	private String senha;
-	private String sobrenome;
+	private String sobrenome2;
 
-	public Usuario(int id_usuario, String nome, String email, String senha, String sobrenome) {
+	public Usuario(int id_usuario, String nome, String email, String senha, String sobrenome2) {
 		super();
 		this.id_usuario = id_usuario;
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
-		this.sobrenome = sobrenome;
+		this.sobrenome2 = sobrenome2;
 	}
 	
 	public Usuario() {
