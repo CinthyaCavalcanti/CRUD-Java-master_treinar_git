@@ -14,6 +14,8 @@ import javax.servlet.http.HttpSession;
 import gustavo.com.github.dao.UsuarioDAO;
 import gustavo.com.github.modelo.Usuario;
 
+
+
 /**
  * Servlet implementation class LoginControlador
  */
@@ -35,6 +37,10 @@ public class LoginControlador extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/index.jsp");
+		if(requestDispatcher !=null){
+			System.out.println("requestDispatcher n√o null");
+		}
+		
 		requestDispatcher.forward(request, response);
 
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
