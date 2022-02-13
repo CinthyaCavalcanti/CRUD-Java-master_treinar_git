@@ -14,6 +14,7 @@ public class TelefoneTipoDAOTest {
 	public static void setUpBeforeClass() throws Exception {
 	}
 
+	//teste de alteração na main para fazer pull
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 	}
