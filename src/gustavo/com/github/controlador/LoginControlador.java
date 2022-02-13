@@ -14,8 +14,6 @@ import javax.servlet.http.HttpSession;
 import gustavo.com.github.dao.UsuarioDAO;
 import gustavo.com.github.modelo.Usuario;
 
-
-
 /**
  * Servlet implementation class LoginControlador
  */
@@ -41,6 +39,7 @@ public class LoginControlador extends HttpServlet {
 			System.out.println("requestDispatcher n√o null");
 		}
 		
+		System.out.println("requestDispatcher n√Éo null");
 		requestDispatcher.forward(request, response);
 
 		//response.getWriter().append("Served at: ").append(request.getContextPath());

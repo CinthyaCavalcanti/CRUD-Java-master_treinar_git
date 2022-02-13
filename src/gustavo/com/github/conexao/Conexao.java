@@ -8,6 +8,10 @@ import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 
 //precisa ajustar essa conexão
+/*
+deveria ser uma classe anotada em vez
+de uma classe com jdbc
+*/
 
 public class Conexao {
 	private static BasicDataSource dataSource = null;
@@ -26,6 +30,7 @@ public class Conexao {
 		}else if (dataSource != null) {
 			System.out.println("é diferente de null");
 		}
+		System.out.println("Ã© null");
 		
 		return dataSource;
 	}
