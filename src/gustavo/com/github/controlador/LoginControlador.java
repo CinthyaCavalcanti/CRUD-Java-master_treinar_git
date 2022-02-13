@@ -50,6 +50,10 @@ public class LoginControlador extends HttpServlet {
 			UsuarioDAO usuarioDAO = new UsuarioDAO();
 			Usuario usuario = new Usuario();
 			
+			if(usuario !=null){
+				System.out.println("usuário não null");
+			}
+			
 			try {
 				usuario.setEmail(request.getParameter("email"));
 				usuario.setSenha(request.getParameter("senha"));
