@@ -8,14 +8,16 @@ public class Usuario {
 	private String email;
 	private String senha;
 	private String sobrenome2;
+	private int idade;
 
-	public Usuario(int id_usuario, String nome, String email, String senha, String sobrenome2) {
+	public Usuario(int id_usuario, String nome, String email, String senha, String sobrenome2, int idade) {
 		super();
 		this.id_usuario = id_usuario;
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
 		this.sobrenome2 = sobrenome2;
+		this.idade = idade;
 	}
 	
 	public Usuario() {
