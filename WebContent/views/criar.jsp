@@ -118,7 +118,7 @@
 			<tr>
 				<td class="center-align">
 					<font size="5">
-						Tudo que estiver em
+						Tudo que estiver na cor em
 						<font color="red">
 							 vermelho 
 						</font>
