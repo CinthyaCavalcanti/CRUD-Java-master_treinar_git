@@ -23,7 +23,7 @@ public class Conexao {
 			dataSource.setMaxIdle(100);
 			dataSource.setMaxTotal(1000);
 			dataSource.setMaxWaitMillis(5000);
-		}
+		}System.out.println("mais uma mudança");
 		
 		return dataSource;
 	}

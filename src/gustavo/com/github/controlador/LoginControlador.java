@@ -37,7 +37,7 @@ public class LoginControlador extends HttpServlet {
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/index.jsp");
 		requestDispatcher.forward(request, response);
 
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
