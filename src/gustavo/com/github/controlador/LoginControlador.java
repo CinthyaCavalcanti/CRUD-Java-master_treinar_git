@@ -42,8 +42,8 @@ public class LoginControlador extends HttpServlet {
 		System.out.println("requestDispatcher nÃo null");
 		requestDispatcher.forward(request, response);
 
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	} 
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
