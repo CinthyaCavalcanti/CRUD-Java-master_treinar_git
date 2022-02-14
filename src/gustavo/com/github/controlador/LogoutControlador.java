@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 /**
  * Servlet implementation class LogoutControlador
@@ -33,6 +34,8 @@ public class LogoutControlador extends HttpServlet {
 		HttpSession session = request.getSession(false);
 		if (session != null) {
 		    session.invalidate();
+		}else if(session == null) {
+			System.out.println("teste");
 		}
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/index.jsp");
 		requestDispatcher.forward(request, response);
