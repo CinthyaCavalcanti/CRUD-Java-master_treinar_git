@@ -27,9 +27,11 @@ public class Conexao {
 			dataSource.setMaxIdle(100);
 			dataSource.setMaxTotal(1000);
 			dataSource.setMaxWaitMillis(5000);
-		}else if (dataSource != null) {
-			System.out.println("é diferente de null");
+			dataSource.setEnableAutoCommitOnReturn(true);
+		}else if (dataSource.getEnableAutoCommitOnReturn()) {
+			System.out.println("EnableAutoCommitOnReturn é true");
 		}
+		System.out.println("testeee");
 		System.out.println("Ã© null");
 		System.out.println("mais uma mudança");
 		
