@@ -45,16 +45,17 @@ public class UsuarioControlador extends HttpServlet {
 		
 		if (opcao.equals("criar")) {
 			TelefoneTipoDAO telefoneTipoDAO = new TelefoneTipoDAO();
-			List<TelefoneTipo> lista = new ArrayList<>();
+			List<TelefoneTipo> lista2 = new ArrayList<>();
 
 			try {
-				lista = telefoneTipoDAO.listarTelefoneTipo();
+				lista2 = telefoneTipoDAO.listarTelefoneTipo();
 
-				for (TelefoneTipo telefoneTipo : lista) {
-					System.out.println(telefoneTipo);
+				for (TelefoneTipo telefoneTipoAux : lista2) {
+					System.out.println(telefoneTipoAux);
+					System.out.println("esse telefone aux");
 				}
 				
-				request.setAttribute("lista", lista);
+				request.setAttribute("lista", lista2);
 				System.out.println("Pressionou a opção de criar");
 				RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/criar.jsp");
 				requestDispatcher.forward(request, response);

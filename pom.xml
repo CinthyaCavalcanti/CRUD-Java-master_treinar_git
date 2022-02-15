@@ -3,7 +3,7 @@
   <groupId>CIDAJava3</groupId>
   <artifactId>CIDAJava</artifactId>
   <version>0.0.2-SNAPSHOT</version>
-  <name>CIDAJava3</name>
+  <name>CIDAJava3</name> 
   <packaging>war</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>

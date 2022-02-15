@@ -2,7 +2,7 @@ package gustavo.com.github.modelo;
 
 public class TelefoneTipo {
 	private int id_telefone_tipo;
-	private String nome;
+	public String nome;
 	
 	public TelefoneTipo(int id_telefone_tipo, String nome) {
 		super();
